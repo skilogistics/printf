@@ -18,7 +18,7 @@ int (*f)(va_list);
 } printer_t;
 
 /* Constants */
-#define BUFSIZE 512
+#define BUFSIZE 1024
 
 /* Prototypes */
 int _putchar(char c);
@@ -32,5 +32,7 @@ int (*get_print_func(const char s))(va_list);
 int _strlen(char *s);
 int print_percent(va_list args);
 int print_else(va_list args);
+int rot13(va_list args);
+char *_strchr(char *s, char c);
 
 #endif /* MAIN_H */
