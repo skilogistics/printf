@@ -31,7 +31,8 @@ return (2);
  *
  * Return: The number of characters printed.
  */
-int put_unsigned_hex_upper(va_list args) {
+int put_unsigned_hex_upper(va_list args)
+{
 unsigned int num = va_arg(args, unsigned int);
 int charCount, i, j, remainder;
 if (num == 0)
