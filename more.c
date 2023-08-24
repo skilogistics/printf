@@ -9,12 +9,13 @@
  **/
 char *itoa(long int num, int baseNum)
 {
-static char *array = "0123456789abcdef";
+static char *array;
 static char buffer[50];
 char *ptr;
 char sign;
 unsigned long n;
 
+array = "0123456789abcdef";
 n = num;
 sign = 0;
 if (num < 0)
