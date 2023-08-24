@@ -59,22 +59,10 @@ return (charCount);
 int _put_octal(va_list args)
 {
 char buffer[20];
-int i, j, charCount, num;
+int charCount;
 
-num = va_arg(args, unsigned int);
-if (num == 0)
-return (_putchar('0'));
-i = 0;
-while (num > 0)
-{
-buffer[i++] = (num % 8) + '0';
-num /= 8;
-}
-
-charCount = 0;
-for (j = i - 1; (signed int) j > 0; j--)
-charCount += _putchar(buffer[j]);
-
+buffer = itoa(va_arg(list, unsigned int), 8);
+charCount = _puts((p_buff != NULL) ? buffer : "NULL");
 return (charCount);
 }
 
