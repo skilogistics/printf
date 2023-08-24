@@ -91,6 +91,7 @@ int put_unsigned_hex(va_list args)
 {
 unsigned int num, i, j, remainder;
 char buffer[20];
+int charCount;
 	
 num = va_arg(args, unsigned int);
 if (num == 0)
