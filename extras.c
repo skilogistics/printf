@@ -76,7 +76,7 @@ int count;
 count = 0;
 _putchar('\\');
 _putchar('x');
-count += 2
+count += 2;
 if (c < 16)
 {
 _putchar('0');
@@ -114,4 +114,5 @@ _putchar(str[j]);
 count++;
 }
 }
+  return (count);
 }
