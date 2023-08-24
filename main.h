@@ -39,5 +39,6 @@ int _put_unsigned(va_list args);
 int put_unsigned_hex(va_list args);
 int put_unsigned_hex_upper(va_list args);
 int _put_octal(va_list args);
+char *itoa(long int, int);
 
 #endif /* MAIN_H */
