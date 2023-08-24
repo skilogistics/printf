@@ -36,7 +36,7 @@ str = va_arg(args, char *);
 input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-rotated_str = malloc(_strlen(str) + 1);
+rotated_str = malloc(_strlen(str));
 count = 0;
 
 for (i = 0; str[i] != '\0'; i++)
@@ -49,7 +49,6 @@ else
 rotated_str[i] = str[i];
 }
 }
-rotated_str[i] = '\0';
 
 while (rotated_str[count] != '\0')
 {
