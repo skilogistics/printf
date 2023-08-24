@@ -39,7 +39,7 @@ int _put_unsigned(va_list args)
 {
 int i, j, charCount, num;
 
-num = va_args(args, unsigned int);
+num = va_arg(args, unsigned int);
 if (num == 0)
 return (_putchar('0'));
 
