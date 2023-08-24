@@ -38,13 +38,12 @@ return (charCount);
 int _put_unsigned(va_list args)
 {
 int i, j, charCount, num;
+char buffer[20];
 
 num = va_arg(args, unsigned int);
 if (num == 0)
 return (_putchar('0'));
 
-
-char buffer[20];
 i = 0; 
 
 while (num > 0)
@@ -62,16 +61,13 @@ return (charCount);
 
 int _put_octal(va_list args)
 {
+char buffer[20];
 int i, j, charCount, num;
 
 num = va_args(args, unsigned int);
 if (num == 0)
 return (_putchar('0'));
-
-
-char buffer[20];
-int i = 0;
-
+i = 0;
 while (num > 0)
 {
 buffer[i++] = (num % 8) + '0';
@@ -94,13 +90,12 @@ return (charCount);
 int put_unsigned_hex(va_list args)
 {
 unsigned int num, i, j, remainder;
-
+char buffer[20];
+	
 num = va_arg(args, unsigned int);
 if (num == 0)
 return _putchar('0');
 
-
-char buffer[20];
 i = 0;
 
 while (num > 0)
