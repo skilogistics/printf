@@ -19,7 +19,9 @@ return (1);
  */
 int print_else(va_list args)
 {
-char c = va_arg(args, int);
+char c;
+
+c = va_arg(args, int);
 _putchar('%');
 _putchar(c);
 return (2);
@@ -35,10 +37,11 @@ int put_unsigned_hex_upper(va_list args)
 {
 unsigned int num = va_arg(args, unsigned int);
 int charCount, i, j, remainder;
+char buffer[20];
+
 if (num == 0)
 return _putchar('0');
 
-char buffer[20];
 i = 0;
 
 while (num > 0)
