@@ -61,8 +61,8 @@ int _put_octal(va_list args)
 char buffer[20];
 int charCount;
 
-buffer = itoa(va_arg(list, unsigned int), 8);
-charCount = _puts((p_buff != NULL) ? buffer : "NULL");
+buffer = itoa(va_arg(args, unsigned int), 8);
+charCount = _puts((buffer != NULL) ? buffer : "NULL");
 return (charCount);
 }
 
