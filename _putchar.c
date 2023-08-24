@@ -38,24 +38,12 @@ return (charCount);
 int _put_unsigned(va_list args)
 {
 int i, j, charCount, num;
-char buffer[20];
+char *buffer;
 
-num = va_arg(args, unsigned int);
 if (num == 0)
 return (_putchar('0'));
-
-i = 0; 
-
-while (num > 0)
-{
-buffer[i++] = (num % 10) + '0';
-num /= 10;
-}
-
-charCount = 0;
-for (j = i - 1; j >= 0; j--)
-charCount += _putchar(buffer[j]);
-
+buffer = itoa(va_arg(args, unsigned int), 10);
+count = _puts((buffer != NULL) ? buffer : "NULL");
 return (charCount);
 }
 
