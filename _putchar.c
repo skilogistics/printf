@@ -121,7 +121,6 @@ charCount = 0;
 for (int j = i - 1; j >= 0; j--)
 charCount += _putchar(buffer[j]);
 
-
 return (charCount);
 }
 
