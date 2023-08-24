@@ -71,8 +71,10 @@ return (charCount);
 }
 
 /**
-* put_unsigned_hex - Prints the hexadecimal representation of an unsigned integer.
-* @args: A va_list containing the unsigned integer to be printed in hexadecimal.
+* put_unsigned_hex - Prints the hexadecimal
+* representation of an unsigned integer.
+* @args: A va_list containing the unsigned integer
+* to be printed in hexadecimal.
 *
 * Return: The number of characters printed.
 */
@@ -84,7 +86,7 @@ int charCount;
 
 num = va_arg(args, unsigned int);
 if (num == 0)
-return _putchar('0');
+return (_putchar('0'));
 
 i = 0;
 
