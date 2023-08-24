@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * itoa - int to ascii
  * @num: num
