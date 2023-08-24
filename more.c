@@ -3,7 +3,7 @@
 /**
  * itoa - int to ascii
  * @num: num
- * @base: base
+ * @base: baseNum
  *
  * Return: char
  **/
