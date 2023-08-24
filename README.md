@@ -12,7 +12,7 @@ write output to stdout, the standard output stream
 | Specifier  | Description |
 |------------|-------------|
 | `c`        | Prints a single character. The argument must be an int that represents the ASCII value of the character.|
-| `s`        | Prints a null-terminated string (pointer to char).|
+| `s`        | Prints a literal null-terminated string (pointer to char).|
 | `%`        | Prints a percent sign (%). No argument is required.|
 | `d`        | Prints a signed decimal integer. The argument must be of type int.|
 | `i`        | Prints a signed decimal integer. The argument must be of type int. |
