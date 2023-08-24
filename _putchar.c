@@ -58,7 +58,7 @@ return (charCount);
 */
 int _put_octal(va_list args)
 {
-char buffer[20];
+char *buffer;
 int charCount;
 
 buffer = itoa(va_arg(args, unsigned int), 8);
