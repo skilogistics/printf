@@ -40,5 +40,7 @@ int put_unsigned_hex(va_list args);
 int put_unsigned_hex_upper(va_list args);
 int _put_octal(va_list args);
 char *itoa(long int, int);
-
+int put_pointer(va_list args);
+int print_string_with_non_printable(va_list args);
+int print_non_printable_char(char c);
 #endif /* MAIN_H */

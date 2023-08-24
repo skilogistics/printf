@@ -20,6 +20,8 @@ printer_t funcs[] = {
 {'b', print_binary},
 {'r', print_reverse},
 {'R', rot13},
+{'p', put_pointer},
+{'S', print_string_with_non_printable},
 {'\0', NULL}
 };
 
