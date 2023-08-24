@@ -37,7 +37,8 @@ return (charCount);
 */
 int _put_unsigned(va_list args)
 {
-int charCount, num;
+int num;
+unsigned int charCount;
 char *buffer;
 
 num = va_arg(args, unsigned int);
@@ -51,7 +52,7 @@ return (charCount);
 /**
 * _put_octal - Prints the octal representation
 * of an unsigned integer.
-* @num: The unsigned integer to be printed in octal.
+* @args: The unsigned integer to be printed in octal.
 *
 * Return: The number of characters printed.
 */
