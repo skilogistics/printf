@@ -53,7 +53,7 @@ num /= 10;
 }
 
 charCount = 0;
-for (j = i - 1; j >= 0; j--)
+for (j = i - 1; j > 0; j--)
 charCount += _putchar(buffer[j]);
 
 return (charCount);
@@ -75,7 +75,7 @@ num /= 8;
 }
 
 charCount = 0;
-for (j = i - 1; j >= 0; j--)
+for (j = i - 1; j > 0; j--)
 charCount += _putchar(buffer[j]);
 
 return (charCount);
