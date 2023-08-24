@@ -86,7 +86,7 @@ count++;
 }
 _putchar((c >> 4) + '0');
 _putchar((c & 0xF) + '0');
-count += 2;  
+count += 2;
 return(count);
 }
 
