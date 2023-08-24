@@ -63,3 +63,55 @@ for (j = i - 1; j >= 0; j--)
 charCount += _putchar(buffer[j]);
 return (charCount);
 }
+
+/**
+ * print_non_printable_char - Prints a non-printable character in \x format.
+ * @c: The character to be printed.
+ * Return: character count
+ */
+int print_non_printable_char(char c)
+{
+int count;
+
+count = 0;
+_putchar('\\');
+_putchar('x');
+count += 2
+if (c < 16)
+{
+_putchar('0');
+count++;
+}
+_putchar((c >> 4) + '0');
+_putchar((c & 0xF) + '0');
+count += 2;  
+return(count);
+}
+
+/**
+ * print_string_with_non_printable - Prints a string with non-printable characters.
+ * @args: A va_list containing the string to be printed.
+ *
+ * Return: The number of characters printed.
+ */
+int print_string_with_non_printable(va_list args) 
+{
+char *str;
+int count, j;
+
+str = va_arg(args, char *);
+
+count = 0;
+for (j = 0; str[j] != '\0'; j++)
+{
+if (str[j] < 32 || str[j] >= 127)
+{
+count += print_non_printable_char(str[j]);
+}
+else
+{
+_putchar(str[j]);
+count++;
+}
+}
+}
