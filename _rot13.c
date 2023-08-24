@@ -35,8 +35,7 @@ char *rotated_str;
 str = va_arg(args, char *);
 input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-if (str == NULL)
-str = "(nil)";
+
 rotated_str = malloc(_strlen(str) + 1);
 count = 0;
 
