@@ -24,3 +24,38 @@ _putchar('%');
 _putchar(c);
 return (2);
 }
+
+/**
+ * put_unsigned_hex_upper - Prints the uppercase hexadecimal representation of an unsigned integer.
+ * @args: A va_list containing the unsigned integer to be printed in uppercase hexadecimal.
+ *
+ * Return: The number of characters printed.
+ */
+int put_unsigned_hex_upper(va_list args) {
+unsigned int num = va_arg(args, unsigned int);
+int charCount, i, j, remainder;
+if (num == 0)
+return _putchar('0');
+
+char buffer[20];
+i = 0;
+
+while (num > 0)
+{
+remainder = num % 16;
+if (remainder < 10)
+{
+buffer[i++] = remainder + '0';
+}
+else
+{
+buffer[i++] = remainder - 10 + 'A';
+}
+num /= 16;
+}
+
+charCount = 0;
+for (j = i - 1; j >= 0; j--)
+charCount += _putchar(buffer[j]);
+return (charCount);
+}
