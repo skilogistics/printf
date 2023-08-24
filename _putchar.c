@@ -43,7 +43,7 @@ char *buffer;
 if (num == 0)
 return (_putchar('0'));
 buffer = itoa(va_arg(args, unsigned int), 10);
-count = _puts((buffer != NULL) ? buffer : "NULL");
+charCount = _puts((buffer != NULL) ? buffer : "NULL");
 return (charCount);
 }
 
