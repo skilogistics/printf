@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_percent - Prints the character '%' using putchar
- * @args: Variable argument list (unused)
- * Return: Updated count of characters printed.
- */
+* print_percent - Prints the character '%' using putchar
+* @args: Variable argument list (unused)
+* Return: Updated count of characters printed.
+*/
 int print_percent(va_list args)
 {
 (void)args;
@@ -13,10 +13,10 @@ return (1);
 }
 
 /**
- * print_else - Prints a character followed by '%'
- * @args: Variable argument list containing the character to be printed
- * Return: Updated count of characters printed.
- */
+* print_else - Prints a character followed by '%'
+* @args: Variable argument list containing the character to be printed
+* Return: Updated count of characters printed.
+*/
 int print_else(va_list args)
 {
 char c;
@@ -28,11 +28,13 @@ return (2);
 }
 
 /**
- * put_unsigned_hex_upper - Prints the uppercase hexadecimal representation of an unsigned integer.
- * @args: A va_list containing the unsigned integer to be printed in uppercase hexadecimal.
- *
- * Return: The number of characters printed.
- */
+* put_unsigned_hex_upper - Prints the uppercase hexadecimal
+* representation of an unsigned integer.
+* @args: A va_list containing the unsigned integer to
+* be printed in uppercase hexadecimal.
+*
+* Return: The number of characters printed.
+*/
 int put_unsigned_hex_upper(va_list args)
 {
 unsigned int num = va_arg(args, unsigned int);
@@ -40,7 +42,7 @@ int charCount, i, j, remainder;
 char buffer[20];
 
 if (num == 0)
-return _putchar('0');
+return (_putchar('0'));
 
 i = 0;
 
@@ -65,10 +67,10 @@ return (charCount);
 }
 
 /**
- * print_non_printable_char - Prints a non-printable character in \x format.
- * @c: The character to be printed.
- * Return: character count
- */
+* print_non_printable_char - Prints a non-printable character in \x format.
+* @c: The character to be printed.
+* Return: character count
+*/
 int print_non_printable_char(char c)
 {
 int count;
@@ -89,11 +91,12 @@ return(count);
 }
 
 /**
- * print_string_with_non_printable - Prints a string with non-printable characters.
- * @args: A va_list containing the string to be printed.
- *
- * Return: The number of characters printed.
- */
+* print_string_with_non_printable - Prints a string
+* with non-printable characters.
+* @args: A va_list containing the string to be printed.
+*
+* Return: The number of characters printed.
+*/
 int print_string_with_non_printable(va_list args) 
 {
 char *str;
@@ -114,5 +117,5 @@ _putchar(str[j]);
 count++;
 }
 }
-  return (count);
+return (count);
 }
